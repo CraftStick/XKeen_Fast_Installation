@@ -285,8 +285,15 @@ xkeen -start
 - **Форк XKeen (jameszeroX) + Wiki:** https://github.com/jameszeroX/XKeen — раздел [Configuration](https://github.com/jameszeroX/XKeen/wiki/Configuration)
 - **FAQ по XKeen:** https://jameszero.net/faq-xkeen.htm
 - **Инструкция от автора XKeen (Skrill0):** https://xskrill.notion.site/XKeen-c9f0f2a5018743b59eb81bd6fccdf25a
-- **Форум Keenetic (тема XKeen):** https://forum.keenetic.com/topic/16899-xkeen/
 - **Телеграм-чат XKeen:** https://t.me/+SZWOjSlvYpdlNmMy
 - **Русскоязычный чат Project VLESS:** https://t.me/projectVless
 
 Авторы: XKeen — [@Skrill_zerro](https://t.me/Skrill_zerro), форк — [jameszeroX](https://github.com/jameszeroX).
+
+---
+
+## ⭐ Поддержка
+
+Если инструкция помогла - поставьте звёздочку, буду рад 🤗
+
+И не забудьте про оригинал — авторов XKeen тоже поддержите звездой.
