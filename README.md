@@ -289,6 +289,4 @@ xkeen -start
 - **Телеграм-чат XKeen:** https://t.me/+SZWOjSlvYpdlNmMy
 - **Русскоязычный чат Project VLESS:** https://t.me/projectVless
 
-XKeen UI: [zxc-rv](https://github.com/zxc-rv/XKeen-UI) · [umarcheh001](https://github.com/umarcheh001/Xkeen-UI) — SubKeen: [V2as](https://github.com/V2as/SubKeen) — Mihomo Studio: [l-ptrol](https://github.com/l-ptrol/mihomo_studio)
-
 Авторы: XKeen — [@Skrill_zerro](https://t.me/Skrill_zerro), форк — [jameszeroX](https://github.com/jameszeroX).
