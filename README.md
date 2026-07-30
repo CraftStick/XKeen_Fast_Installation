@@ -105,7 +105,12 @@ system configuration save
 
 **03_inbounds.json** — режим: [Mixed](https://github.com/Corvus-Malus/XKeen/releases/latest/download/03_inbounds.json) (баланс) · [TProxy](https://github.com/Corvus-Malus/XKeen/releases/latest/download/03_inbounds_tproxy.json) (игры/стриминг) · [Redirect](https://github.com/Corvus-Malus/XKeen/releases/latest/download/03_inbounds_redirect.json) (только TCP).
 
-**04_outbounds.json** — [шаблон](https://github.com/Corvus-Malus/XKeen/releases/latest/download/04_outbounds.json). Проще собрать через [Config Generator](https://corvus-malus.github.io/XKeen-Config-Generator/) — вставьте ссылку из 3X-UI.
+**04_outbounds.json** — [шаблон](https://github.com/Corvus-Malus/XKeen/releases/latest/download/04_outbounds.json). Проще собрать через [Config Generator](https://corvus-malus.github.io/XKeen-Config-Generator/) — вставьте VLESS ссылку из 3X-UI.
+
+> [!NOTE]
+> 🎯 **У вас еще нет VLESS-ссылки из 3X-UI и не знаете что это?**
+> 
+> Посмотрите [пошаговое руководство по поднятию VPS](https://www.youtube.com/watch?v=zXt3ThtVy0M&t=982s) на основе отличного видео от EasyNetwork.
 
 ![Config Generator](https://github.com/Corvus-Malus/XKeen-docs/raw/main/images/Dark/XKeen-Config-Generator-Dark.png)
 
