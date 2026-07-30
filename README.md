@@ -45,7 +45,7 @@
 - [x] Поддержка открытых пакетов
 - [x] Прокси-сервер DNS-over-TLS · DNS-over-HTTPS
 - [x] Модули ядра подсистемы Netfilter
-- [ ] **Сервер SSH — выключить** (Entware ставит свой)
+- [x] Сервер SSH
 
 ![Компоненты Keenetic](https://github.com/Corvus-Malus/XKeen-docs/raw/main/images/Light/Keenetic-components-Light.jpg)
 
