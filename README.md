@@ -111,6 +111,8 @@ system configuration save
 
 ![05_routing](https://github.com/Corvus-Malus/XKeen-docs/raw/main/images/Dark/05-routing-Dark.png)
 
+**Продвинутый вариант** — базы от автора форка [zkeen-ip](https://github.com/jameszeroX/zkeen-ip) (IP-подсети) + [zkeen-domains](https://github.com/jameszeroX/zkeen-domains) (домены). Готовый пример routing с этими базами (заблокированное, Discord, крупные CDN/хостеры через VLESS, остальное — direct) лежит в README [zkeen-ip](https://github.com/jameszeroX/zkeen-ip). Актуальный `zkeenip.dat` — на [странице релизов](https://github.com/jameszeroX/zkeen-ip/releases/latest).
+
 ---
 
 ## 7. Запуск
