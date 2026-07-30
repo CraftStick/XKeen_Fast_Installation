@@ -13,9 +13,9 @@
 
 **Способ 1 — прямо в роутере** (KeeneticOS 5.1.1+, можно удалённо): вставьте флешку → **Накопители и устройства** → напротив раздела **⋮ → Форматировать** → файловая система **EXT4** → Подтвердить. Флешку в компьютер вставлять не нужно.
 
-![Накопители и устройства — Форматировать](https://github.com/CraftStick/XKeen_Fast_Installation/blob/main/2026-07-30%2012.11.01.jpg?raw=true)
+![Накопители и устройства — Форматировать](https://github.com/CraftStick/XKeen_Fast_Installation/blob/main/images/format-router-1.jpg?raw=true)
 
-![Форматирование раздела в EXT4](https://github.com/CraftStick/XKeen_Fast_Installation/blob/main/2026-07-30%2012.11.05.jpg?raw=true)
+![Форматирование раздела в EXT4](https://github.com/CraftStick/XKeen_Fast_Installation/blob/main/images/format-router-2.jpg?raw=true)
 
 **Способ 2 — на компьютере** (если версия старая или нет пункта форматирования): Paragon Partition Manager Free (Windows) или [Keenetic Entware Flash](https://github.com/MaxXxaM/keenetic-entware-flash) (macOS, делает SWAP + EXT4 одной командой).
 
