@@ -9,13 +9,21 @@
 
 ## 1. Флешка (EXT4)
 
-Отформатируйте USB в **EXT4** (напр. Paragon Partition Manager Free). Желательно первым разделом создать **SWAP** 512 МБ — 1 ГБ.
+Флешку нужно отформатировать в **EXT4**.
 
-**macOS:** [Keenetic Entware Flash](https://github.com/MaxXxaM/keenetic-entware-flash) сделает SWAP + EXT4 одной командой.
+**Способ 1 — прямо в роутере** (KeeneticOS 5.1.1+, можно удалённо): вставьте флешку → **Накопители и устройства** → напротив раздела **⋮ → Форматировать** → файловая система **EXT4** → Подтвердить. Флешку в компьютер вставлять не нужно.
+
+![Накопители и устройства — Форматировать](https://github.com/CraftStick/XKeen_Fast_Installation/blob/main/2026-07-30%2012.11.01.jpg?raw=true)
+
+![Форматирование раздела в EXT4](https://github.com/CraftStick/XKeen_Fast_Installation/blob/main/2026-07-30%2012.11.05.jpg?raw=true)
+
+**Способ 2 — на компьютере** (если версия старая или нет пункта форматирования): Paragon Partition Manager Free (Windows) или [Keenetic Entware Flash](https://github.com/MaxXxaM/keenetic-entware-flash) (macOS, делает SWAP + EXT4 одной командой).
 
 ![Paragon Partition Manager Free](https://github.com/Corvus-Malus/XKeen-docs/raw/main/images/Light/Paragon-Partition-Manager-Free-Light.png)
 
-Подключите флешку — она должна появиться в «Приложения → Диски и принтеры».
+> Желательно первым разделом создать **SWAP** 512 МБ — 1 ГБ (при форматировании на компе).
+
+После форматирования флешка должна появиться в «Накопители и устройства».
 
 ---
 
