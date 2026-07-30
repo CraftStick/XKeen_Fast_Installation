@@ -110,7 +110,7 @@ system configuration save
 > [!NOTE]
 > 🎯 **У вас еще нет VLESS-ссылки из 3X-UI и не знаете что это?**
 > 
-> Посмотрите [пошаговое руководство по поднятию VPS](https://www.youtube.com/watch?v=zXt3ThtVy0M&t=982s) на основе отличного видео от EasyNetwork.
+> Посмотрите [пошаговое руководство по поднятию VPS](https://www.youtube.com/watch?v=zXt3ThtVy0M&t=10m08s) на основе отличного видео от EasyNetwork.
 
 ![Config Generator](https://github.com/Corvus-Malus/XKeen-docs/raw/main/images/Dark/XKeen-Config-Generator-Dark.png)
 
