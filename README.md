@@ -65,7 +65,7 @@
 ![OPKG](https://github.com/Corvus-Malus/XKeen-docs/raw/main/images/Light/Keenetic-OPKG-Light.jpg)
 
 3. Дождитесь в «Диагностика → Системный журнал» установки Entware (этапы 1/5 … 5/5).
-4. Подключитесь по SSH (PuTTY / Termius): IP роутера, порт **22**, логин `root`, пароль `keenetic`.
+4. Подключитесь по SSH (PuTTY / Termius): IP роутера, порт обычно **22** или **222**, логин `root`, пароль `keenetic`.
 5. Смените пароль (`passwd`) и обновите пакеты:
 
 ```bash
