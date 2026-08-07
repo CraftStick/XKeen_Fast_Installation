@@ -109,28 +109,22 @@ system configuration save
 
 ## 6. Настройка Xray
 
-Конфиги в `/opt/etc/xray/configs/` — нужны три файла.
+Конфиги в `/opt/etc/xray/configs/`. Настроить нужно **два файла**: `04_outbounds.json` и `05_routing.json`.
+
+> `03_inbounds.json` подменять не нужно — XKeen сам ставит рабочий вариант с актуальными протоколами.
 
 ![Каталог configs](https://github.com/Corvus-Malus/XKeen-docs/raw/main/images/Light/Explorer-configs-Light.jpg)
 
-**03_inbounds.json** — режим: [Mixed](https://github.com/Corvus-Malus/XKeen/releases/latest/download/03_inbounds.json) (баланс) · [TProxy](https://github.com/Corvus-Malus/XKeen/releases/latest/download/03_inbounds_tproxy.json) (игры/стриминг) · [Redirect](https://github.com/Corvus-Malus/XKeen/releases/latest/download/03_inbounds_redirect.json) (только TCP).
-
-> Для полного проксирования всего трафика многие рекомендуют **TProxy** как самый стабильный (по опыту сообщества — лучше Mixed/Hybrid).
-
-**04_outbounds.json** — [шаблон](https://github.com/Corvus-Malus/XKeen/releases/latest/download/04_outbounds.json). Проще собрать через [Config Generator](https://corvus-malus.github.io/XKeen-Config-Generator/) — вставьте VLESS-ссылку из 3X-UI.
+**04_outbounds.json** — подключение к вашему VPS. Проще всего собрать через генератор — вставьте VLESS-ссылку из 3X-UI: **[Outbound Generator (zxc-rv)](https://zxc-rv.github.io/XKeen-UI/Outbound_Generator/)** (поддерживает современные протоколы и транспорты).
 
 > [!NOTE]
 > 🎯 **У вас ещё нет VLESS-ссылки из 3X-UI и не знаете, что это?**
 >
 > Посмотрите [пошаговое руководство по поднятию VPS](https://www.youtube.com/watch?v=zXt3ThtVy0M&t=10m08s) на основе отличного видео от EasyNetwork.
 
-![Config Generator](https://github.com/Corvus-Malus/XKeen-docs/raw/main/images/Dark/XKeen-Config-Generator-Dark.png)
+**05_routing.json** — правила маршрутизации: что идёт через VPS, а что напрямую. Собрать можно в [Routing Generator](https://xray-routing-generator.netlify.app/).
 
-**05_routing.json** — [Вариант 1](https://github.com/Corvus-Malus/XKeen/releases/latest/download/05_routing.json) (через VPS только заблокированное) или [Вариант 2](https://github.com/Corvus-Malus/XKeen-docs/releases/latest/download/05_routing.json) (RU напрямую, остальное через VPS). Правила — в [Routing Generator](https://xray-routing-generator.netlify.app/).
-
-![05_routing](https://github.com/Corvus-Malus/XKeen-docs/raw/main/images/Dark/05-routing-Dark.png)
-
-**Продвинутый вариант** — базы от автора форка [zkeen-ip](https://github.com/jameszeroX/zkeen-ip) (IP-подсети) + [zkeen-domains](https://github.com/jameszeroX/zkeen-domains) (домены). Готовый пример routing с этими базами (заблокированное, Discord, крупные CDN/хостеры через VLESS, остальное — direct) лежит в README [zkeen-ip](https://github.com/jameszeroX/zkeen-ip). Актуальный `zkeenip.dat` — на [странице релизов](https://github.com/jameszeroX/zkeen-ip/releases/latest).
+**Рекомендуемый вариант** — базы от автора форка [zkeen-ip](https://github.com/jameszeroX/zkeen-ip) (IP-подсети) + [zkeen-domains](https://github.com/jameszeroX/zkeen-domains) (домены). Готовый актуальный пример routing с этими базами (заблокированное, Discord, крупные CDN/хостеры через VLESS, остальное — direct) лежит в README [zkeen-ip](https://github.com/jameszeroX/zkeen-ip). Актуальный `zkeenip.dat` — на [странице релизов](https://github.com/jameszeroX/zkeen-ip/releases/latest).
 
 ---
 
@@ -163,13 +157,13 @@ xkeen -start
 
 ---
 
-## 9. (Опционально) Блокировка QUIC — UDP 80/443
+## 9. (Опционально) Блокировка QUIC — UDP 443
 
-QUIC (HTTP/3 поверх UDP) может идти мимо прокси и ломать часть сайтов (ChatGPT и т.п.). Заблокируйте UDP 443 и 80 — браузер откатится на TCP.
+QUIC (HTTP/3 поверх UDP на порту 443) может идти мимо прокси и ломать часть сайтов (ChatGPT и т.п.). Заблокируйте UDP 443 — браузер откатится на TCP.
 
-**Сетевые правила → Межсетевой экран → Добавить правило:** Действие `Запретить`, Протокол `UDP`, Порт назначения `Равен` → `443`. Затем **второе правило для порта 80**.
+**Сетевые правила → Межсетевой экран → Добавить правило:** Действие `Запретить`, Протокол `UDP`, Порт назначения `Равен` → `443`.
 
-![Правило межсетевого экрана](https://github.com/Corvus-Malus/XKeen-docs/raw/main/images/Light/Keenetic-Bridge0-Light.png)
+![Правило межсетевого экрана](https://github.com/CraftStick/XKeen_Fast_Installation/blob/main/images/format-router-3.jpg?raw=true)
 
 > Это помогает загнать трафик в прокси, но **не спасёт, если IP вашего VPS в стоп-листе сервиса** (например, Google видит страну по IP сервера). В этом случае нужен другой сервер/IP — блокировка QUIC тут не поможет.
 
